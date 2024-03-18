@@ -1,20 +1,15 @@
 {
-    "name": "Espace 230",
-    "short_name": "Espace 230",
+    "name": "Espace St-Jean",
+    "short_name": "Espace St-Jean",
     "icons": [
         {
-            "src": "/icons/android-chrome-192x192.png?v=2021.04",
+            "src": "https://music.jyunko.cn/icons/android-chrome-192x192.png?v=2023.10",
             "sizes": "192x192",
             "type": "image/png"
         },
         {
-            "src": "/icons/android-chrome-512x512.png?v=2021.04",
+            "src": "https://music.jyunko.cn/icons/android-chrome-512x512.png?v=2023.10",
             "sizes": "512x512",
-            "type": "image/png"
-        },
-        {
-            "src": "/icons/android-chrome-1024x1024.png?v=2021.04",
-            "sizes": "1024x1024",
             "type": "image/png"
         }
     ],

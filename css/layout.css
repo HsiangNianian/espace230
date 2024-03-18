@@ -39,12 +39,13 @@ li.main-nav:not(.active):hover {
 }
 
 div.splash > .main-content > img {
-	position: absolute;
+	/* position: absolute; */
+	position: fixed;
 	left: -1vh;
 	/* bottom: 0vh;  */
 	bottom: -2vh;
-	/* width: 70%; */
-	width: 50%;
+	width: 70%;
+	/* width: 50%; */
 	height: auto;
 }
 
@@ -76,7 +77,9 @@ li.main-nav.active .section-title {
 }
 
 li.main-nav.active .section-content {
-	flex: 8;
+	/* Changed flex to 9 to accomodate actual viewport height !2024-02-07 */
+	flex: 9;
+	/* flex: 8; */
 	transform: scaleX(1);
 }
 
@@ -337,6 +340,37 @@ li.active #gallery-button-show {
 	z-index: 1999999;
 }
 
+/* ////////////////// */
+/* NUIT BLANCHE LOGOS */
+/* ////////////////// */
+
+.NB-flex-container {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: space-around;
+	align-items: center;
+	align-content: center;
+}
+
+.NB-flex-items:nth-child(1) {
+	display: block;
+	flex-grow: 0;
+	flex-shrink: 1;
+	flex-basis: auto;
+	align-self: auto;
+	order: 0;
+}
+
+.NB-flex-items:nth-child(2) {
+	display: block;
+	flex-grow: 0;
+	flex-shrink: 1;
+	flex-basis: auto;
+	align-self: auto;
+	order: 0;
+}
+
 
 /* ///////////// */
 /* MOBILE LAYOUT */
@@ -370,6 +404,20 @@ li.active #gallery-button-show {
 	.mobile-hidden {
 		visibility: hidden;
 	}
+
+
+	.belgo_art_iframe {
+		-ms-zoom: 0.9;
+		-moz-transform: scale(0.9);
+		-moz-transform-origin: 0 0;
+		-o-transform: scale(0.9);
+		-o-transform-origin: 0 0;
+		-webkit-transform: scale(0.9);
+		-webkit-transform-origin: 0 0;
+		overflow: hidden;
+		width: 107% !important;
+	}
+
 }
 
 @media screen and (orientation: landscape) and (max-width: 896px) {
@@ -421,6 +469,16 @@ li.active #gallery-button-show {
 	.gallery-section {
 		padding-left: 7vw;
 	}
+
+	/* #belgo-gallery-embed {
+		width: 89%;
+		padding-top: 138%;
+	}
+
+	#belgo-gallery-embed > iframe {
+		width: 89%;
+		height: 89%;
+	} */
 }
 
 /* @media screen and (orientation: landscape) and (max-width: 667px) { */
@@ -478,7 +536,9 @@ li.active #gallery-button-show {
 
 	li.main-nav.active {
 		order: 5;
-		flex: 20;
+		/* Changed to 19 to accomodate Real Viewport Size !2024-02-07 */
+		flex: 19;
+		/* flex: 20; */
 		/* Shrink size of menu at the top */
 	}
 
